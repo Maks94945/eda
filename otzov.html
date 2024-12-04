@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы о доставке еды</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .review {
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .review h3 {
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .review p {
+            color: #555;
+            font-size: 16px;
+        }
+        .review .author {
+            color: #888;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .hh{
+            color: white;
+        }
+
+        header {
+    background-color: #333;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+  
+  }
+  
+
+  /* Контейнер для размещения элементов футера */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Заголовки разделов футера */
+  footer h4 {
+    color: #f9a825;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 17px;
+  }
+
+  /* Ссылки в футере */
+  footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+  }
+
+  /* Эффект наведения на ссылки */
+  footer a:hover {
+    color: #f9a825;
+  }
+
+  /* Логотип компании */
+  .logo img {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  /* Стиль для подписки */
+  .subscribe input {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .subscribe button {
+    background-color: #f9a825;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .subscribe button:hover {
+    background-color: #f57f17;
+  }
+
+  /* Контейнер для контактной информации и социального блока */
+  .contact-info, .social-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-links img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+
+  .social-links img:hover {
+    opacity: 0.7;
+  }
+
+  /* Подпись и юридическая информация */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  /* Стили для адаптивности */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+          <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html">Меню</a></li>
+          <li><a href="index.html">Акции и скидки</a></li>
+          <li><a href="index.html">Отзывы</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container">
+        <h1 class="hh">Отзывы о доставке еды</h1>
+
+        <div class="review">
+            <h3>Отличное обслуживание!</h3>
+            <p>Заказываю еду через этот сервис уже несколько раз и всегда остаюсь доволен. Быстрая доставка, всегда горячая еда и вежливые курьеры. Очень понравилась пицца с морепродуктами, она просто восхитительная!</p>
+            <p class="author">— Алексей, 27 лет</p>
+        </div>
+
+        <div class="review">
+            <h3>Очень вкусно и удобно</h3>
+            <p>Решила попробовать заказать доставку, и не пожалела. Очень понравился выбор блюд, а также удобный интерфейс на сайте. Заказ доставили вовремя, а еда была свежей и вкусной. Обязательно закажу снова.</p>
+            <p class="author">— Марина, 32 года</p>
+        </div>
+
+        <div class="review">
+            <h3>Совсем не понравилось</h3>
+            <p>К сожалению, доставка опоздала на 40 минут, а заказ был не полный. Обратился в службу поддержки, но не получил удовлетворительного ответа. Надеюсь, что это была единичная проблема.</p>
+            <p class="author">— Игорь, 40 лет</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="logo">
+            <img src="logo.png" alt="Логотип">
+            <p>Свежая еда, быстрая доставка</p>
+          </div>
+          <div>
+            <h4>Услуги</h4>
+            <ul>
+              <li><a href="#menu">Меню</a></li>
+              <li><a href="#promotions">Акции и Скидки</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Помощь</h4>
+            <ul>
+              <li><a href="#">Часто задаваемые вопросы</a></li>
+              <li><a href="#">Условия доставки</a></li>
+            </ul>
+          </div>
+          <div class="subscribe">
+            <h4>Подпишитесь на рассылку</h4>
+            <input type="email" placeholder="Введите ваш email">
+            <button>Подписаться</button>
+          </div>
+        </div>
+    
+        <div class="social-links">
+          <a href="#"><img src="https://avatars.mds.yandex.net/get-entity_search/5535095/787981571/S114x114FitScale_2x" alt="Facebook"></a>
+          <a href="#"><img src="https://avatars.mds.yandex.net/get-entity_search/2115007/575425055/S114x114FitScale_2x" alt="Instagram"></a>
+          <a href="#"><img src="https://avatars.mds.yandex.net/get-entity_search/9721020/683835905/S114x114FitScale_2x" alt="Twitter"></a>
+        </div>
+    
+        <div class="footer-bottom">
+          <div>
+            <p>© 2024 Название компании. Все права защищены.</p>
+          </div>
+          <div>
+            <a href="#" style="color: white;">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
+    
+
+</body>
+</html>

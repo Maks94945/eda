@@ -1,0 +1,532 @@
+body{
+    background-color: #000000;
+  }
+  html{
+    padding: 0;
+  }
+  header {
+      background-color: #333;
+      color: white;
+      padding: 5px 0;
+      text-align: center;
+      
+    }
+    
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    
+    
+    .main-banner {
+      background-image: url('https://as1.ftcdn.net/v2/jpg/08/83/97/96/1000_F_883979664_abB15TmibxhUZ4oLHJacC6XvvVr7DLkj.jpg');
+      background-size: cover;
+      text-align: center;
+      padding: 150px 0;
+    }
+    
+    .main-banner h1 {
+      font-size: 3em;
+      background-color: rgba(255, 255, 255, 0.545);
+      color: #333;
+    }
+    
+    .main-banner p {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: rgb(0, 0, 0);
+    }
+    .ppp{
+      background-color: rgba(255, 255, 255, 0.045);
+  
+    }
+    
+    .menu, .promotions, .orders, .contact {
+      padding: 40px;
+      text-align: center;
+  
+    }
+    
+    .menu-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .menu-item {
+      width: 30%;
+      margin-bottom: 20px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color:rgba(193, 193, 82, 0.824);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    button:hover {
+      background-color: rgb(193, 188, 37);
+    }
+    
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    form button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    form button:hover {
+      background-color: #555;
+  
+    }
+    footer {
+      background-color: #2d2d2d;
+      color: white;
+      padding: 30px 20px;
+      font-family: Arial, sans-serif;
+    }
+  
+    /* Контейнер для размещения элементов футера */
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    /* Заголовки разделов футера */
+    footer h4 {
+      color: #f9a825;
+      font-size: 18px;
+      margin-bottom: 10px;
+      padding: 17px;
+    }
+  
+    /* Ссылки в футере */
+    footer a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+      transition: color 0.3s;
+    }
+  
+    /* Эффект наведения на ссылки */
+    footer a:hover {
+      color: #f9a825;
+    }
+  
+    /* Логотип компании */
+    .logo img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+  
+    /* Стиль для подписки */
+    .subscribe input {
+      padding: 8px;
+      width: 200px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+  
+    .subscribe button {
+      background-color: #f9a825;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+    .subscribe button:hover {
+      background-color: #f57f17;
+    }
+  
+    /* Контейнер для контактной информации и социального блока */
+    .contact-info, .social-links {
+      display: flex;
+      gap: 15px;
+    }
+  
+    .social-links img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+  
+    .social-links img:hover {
+      opacity: 0.7;
+    }
+  
+    /* Подпись и юридическая информация */
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  
+    /* Стили для адаптивности */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  
+        /* Стили для карточки */
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          background: url('https://cafe-dom-ochag.ru/wp-content/uploads/2022/01/DSC_8015.jpg') no-repeat center center;
+          background-size: cover;
+          color: white;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          padding: 20px;
+          box-sizing: border-box;
+          position: relative;
+          text-align: center;
+          margin: 70px 0;
+        }
+    
+        .card h1 {
+          font-size: 3em;
+          margin: 0;
+          text-shadow:    1px 1px 0px rgb(0, 0, 0),
+          1px 2px 0px rgb(0, 0, 0),
+          2px 1px 0px rgb(0, 0, 0),
+          1px 2px 0px rgb(0, 0, 0);
+        }
+    
+        .card .composition {
+          font-size: 1.2em;
+          margin-top: 20px;
+          max-width: 80%;
+        }
+    
+        /* Темный фон для состава */
+        .card .composition {
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 15px;
+          border-radius: 8px;
+          margin-top: 30px;
+        }
+    
+        /* Кнопка для взаимодействия с карточкой */
+        .card button {
+          margin-top: 30px;
+          padding: 10px 20px;
+          background-color: #ff6600;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          font-size: 1.2em;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+    
+        .card button:hover {
+          background-color: #e65c00;
+        }
+    .pizza{
+      text-decoration: none;
+      color: white;
+    }
+  
+    /* Стиль для модального окна */
+  .modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1; /* Сверху */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Контейнер с содержимым модального окна */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Кнопка закрытия */
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Стили для формы */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input,
+  form select {
+    margin: 10px 0;
+    padding: 1px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #000000;
+  }
+  
+  
+  .success-message {
+    display: none; /* Скрыто по умолчанию */
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  
+  /* From Uiverse.io by eslam-hany */ 
+  .book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    margin-left: 43px;
+  }
+  
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .button {
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #222;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #555;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: #222;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  
+  
+  
+  
